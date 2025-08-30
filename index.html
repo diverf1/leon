@@ -30,9 +30,16 @@
       justify-content: center;
       padding: 20px;
     }
-   
+
+    .container {
+        max-width: 420px; /* ширина блока, как на мобильном */
+        width: 100%;       /* адаптивная ширина */
+        margin: 0 auto;    /* авто отступы слева и справа — по центру */
+        padding: 10px;     /* внутренние отступы */
+        box-sizing: border-box;
+      }
+    
     header img {
-      max-width: 360px;
       background: #fff; /* белая подложка */
       padding: 5px;
       border-radius: 6px; /* чтобы не смотрелось как «заплатка» */
@@ -46,7 +53,6 @@
     }
 
     article {
-      max-width: 420px; /* имитация мобильного экрана */
       background: #fff;
       color: #000;
       margin: 20px;
@@ -133,6 +139,7 @@
   </style>
 </head>
 <body>
+<div class="container">
   <header>
     <img src="leon-logo-big.png" alt="LEON logo">
 </header>
@@ -199,5 +206,5 @@
   <footer>
     ⚠ Азартные игры могут вызывать зависимость. Играйте ответственно.
   </footer>
-</body>
+</div></body>
 </html>
