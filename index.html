@@ -2,83 +2,115 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LEON — визитка</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LEON — спорт всегда с тобой</title>
+  <meta name="description" content="Мини-лендинг БК Леон: регистрация, бонусы, обзор в официальном стиле.">
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    :root {
+      --red: #d71015;
+      --black-bg: #0C1013;
+      --dark-gray: #33363C;
+      --light-gray: #6B737C;
+      --white: #FFFFFF;
+      --yellow: #fdc000;
+      --font-base: 'Roboto', sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
-      margin: 0;
-      font-family: "Arial", sans-serif;
-      background-color: #0D0D0D;
-      color: #fff;
-    }
-
-    header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background: #121212;
+      font-family: var(--font-base);
+      background-color: var(--black-bg);
+      color: var(--white);
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: space-between;
-      padding: 10px 30px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.7);
-      z-index: 1000;
-    }
-
-    header img {
-      height: 40px;
-    }
-
-    .cta-btn {
-      background: #E30613;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      font-weight: bold;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: 0.3s;
-      text-decoration: none;
-    }
-
-    .cta-btn:hover {
-      background: #b5050f;
-    }
-
-    main {
-      margin-top: 80px; /* чтобы контент не прятался под шапкой */
-      padding: 40px 20px;
+      justify-content: center;
+      min-height: 100vh;
       text-align: center;
+      padding: 20px;
     }
 
     h1 {
-      font-size: 32px;
-      margin-bottom: 20px;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      color: var(--red);
+      letter-spacing: 0.05em;
     }
 
-    p {
-      max-width: 600px;
-      margin: 0 auto 30px;
-      font-size: 18px;
-      line-height: 1.6;
+    p.tagline {
+      font-size: 1.2rem;
+      color: var(--light-gray);
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      max-width: 360px;
+      margin: 0.6rem auto;
+      padding: 14px 0;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: var(--white);
+      text-decoration: none;
+      background-color: var(--red);
+      border-radius: 6px;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: var(--yellow);
+      color: var(--black-bg);
+      box-shadow: 0 0 12px rgba(253,192,0,0.6);
+      transform: translateY(-2px);
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      font-size: 0.8rem;
+      color: var(--light-gray);
+      max-width: 360px;
+    }
+
+    .social {
+      margin-top: 1.5rem;
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+    }
+
+    .social a {
+      color: var(--light-gray);
+      text-decoration: none;
+      font-size: 1.5rem;
+    }
+
+    .social a:hover {
+      color: var(--yellow);
     }
   </style>
 </head>
 <body>
+  <h1>LEON</h1>
+  <p class="tagline">спорт всегда с тобой</p>
 
-  <header>
-    <img src="LEON-black.png" alt="LEON Logo">
-    <a href="#" class="cta-btn">Перейти в LEON</a>
-  </header>
+  <a href="#" class="btn">Регистрация в БК Леон</a>
+  <a href="#" class="btn">Актуальные бонусы</a>
+  <a href="#" class="btn">Обзор букмекера</a>
+  <a href="#" class="btn">Зеркало и доступ</a>
+  <a href="#" class="btn">Поддержка/Контакты</a>
 
-  <main>
-    <h1>Добро пожаловать в LEON</h1>
-    <p>Здесь может быть короткий слоган, описание или промо-текст. 
-       Сделай ставку, ощути азарт и получи максимум эмоций!</p>
-    <a href="#" class="cta-btn">Играть сейчас</a>
-  </main>
+  <div class="social">
+    <a href="#" title="Telegram">📱</a>
+    <a href="#" title="VK">VK</a>
+    <a href="#" title="YouTube">▶</a>
+  </div>
 
+  <footer>
+    ⚠ Азартные игры могут вызывать зависимость. Играйте ответственно.
+  </footer>
 </body>
 </html>
