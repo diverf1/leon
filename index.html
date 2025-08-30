@@ -2,103 +2,91 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LEON — спорт всегда с тобой</title>
-  <meta name="description" content="Мини-лендинг БК Леон: регистрация, бонусы, обзор в официальном стиле.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leon — Играй и выигрывай</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-    :root {
-      --red: #d71015;
-      --black-bg: #0C1013;
-      --dark-gray: #33363C;
-      --light-gray: #6B737C;
-      --white: #FFFFFF;
-      --yellow: #fdc000;
-      --font-base: 'Roboto', sans-serif;
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #0C0C0C;
+      color: #FFFFFF;
+      line-height: 1.6;
     }
 
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      font-family: var(--font-base);
-      background-color: var(--black-bg);
-      color: var(--white);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
+    header {
+      background: #0C0C0C;
       padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #1C1C1C;
+    }
+
+    header img {
+      max-width: 180px;
+      height: auto;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: center;
     }
 
     h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-      color: var(--red);
-      letter-spacing: 0.05em;
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      color: #E30613; /* фирменный красный Леон */
     }
 
-    p.tagline {
-      font-size: 1.2rem;
-      color: var(--light-gray);
-      margin-bottom: 2rem;
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      color: #CCCCCC;
     }
 
     .btn {
-      display: block;
-      width: 100%;
-      max-width: 360px;
-      margin: 0.6rem auto;
-      padding: 14px 0;
-      font-size: 1.1rem;
+      display: inline-block;
+      margin: 10px;
+      padding: 14px 28px;
+      font-size: 1rem;
       font-weight: bold;
-      color: var(--white);
       text-decoration: none;
-      background-color: var(--red);
-      border-radius: 6px;
-      transition: 0.3s ease;
+      color: #fff;
+      background: #E30613;
+      border-radius: 8px;
+      transition: 0.3s;
     }
 
     .btn:hover {
-      background-color: var(--yellow);
-      color: var(--black-bg);
-      box-shadow: 0 0 12px rgba(253,192,0,0.6);
-      transform: translateY(-2px);
+      background: #B0050F;
     }
 
     footer {
-      margin-top: 2.5rem;
-      font-size: 0.8rem;
-      color: var(--light-gray);
-      max-width: 360px;
-    }
-
-    .social {
-      margin-top: 1.5rem;
-      display: flex;
-      gap: 12px;
-      justify-content: center;
-    }
-
-    .social a {
-      color: var(--light-gray);
-      text-decoration: none;
-      font-size: 1.5rem;
-    }
-
-    .social a:hover {
-      color: var(--yellow);
+      margin-top: 60px;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      border-top: 1px solid #1C1C1C;
     }
   </style>
 </head>
 <body>
-  <h1>LEON</h1>
-  <p class="tagline">спорт всегда с тобой</p>
+  <header>
+    <img src="LEON-black.png" alt="Leon">
+  </header>
 
-  <a href="#" class="btn">Регистрация в БК Леон</a>
-  <a href="#" class="btn">Актуальные бонусы</a>
-  <a href="#" class="btn">Обзор букмекера</a>
-  <a href="#" class="btn">Зеркало и доступ</a>
-  <a href="#"
+  <section>
+    <h1>Leon — твой мир ставок</h1>
+    <p>Бонусы, акции и захватывающие ставки ждут тебя. Играйте честно и выигрывайте вместе с Leon.</p>
+    <a href="#" class="btn">Регистрация</a>
+    <a href="#" class="btn">Получить бонус</a>
+  </section>
+
+  <footer>
+    © 2025 Leon. Все права защищены. 18+
+  </footer>
+</body>
+</html>
