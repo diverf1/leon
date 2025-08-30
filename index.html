@@ -3,87 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LEON — Бонусы и ставки</title>
+  <title>LEON — визитка</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #0a0a0a;
+      font-family: "Arial", sans-serif;
+      background-color: #0D0D0D;
       color: #fff;
-      text-align: center;
     }
+
     header {
-      background-color: #111;
-      padding: 15px 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #121212;
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
+      padding: 10px 30px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.7);
+      z-index: 1000;
     }
+
     header img {
       height: 40px;
     }
-    header nav a {
+
+    .cta-btn {
+      background: #E30613;
       color: #fff;
-      margin-left: 20px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .hero {
-      padding: 80px 20px;
-    }
-    .hero h1 {
-      font-size: 2.2em;
-      margin-bottom: 15px;
-    }
-    .hero p {
-      font-size: 1.2em;
-      margin-bottom: 25px;
-      color: #bbb;
-    }
-    .btn {
-      background-color: #e30613;
-      color: #fff;
-      padding: 14px 28px;
-      text-decoration: none;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
       font-weight: bold;
       border-radius: 6px;
-      display: inline-block;
-      margin: 10px;
-      transition: background 0.3s;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
     }
-    .btn:hover {
-      background-color: #ff1a2b;
+
+    .cta-btn:hover {
+      background: #b5050f;
     }
-    footer {
-      margin-top: 60px;
-      padding: 20px;
-      background-color: #111;
-      font-size: 0.9em;
-      color: #777;
+
+    main {
+      margin-top: 80px; /* чтобы контент не прятался под шапкой */
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      max-width: 600px;
+      margin: 0 auto 30px;
+      font-size: 18px;
+      line-height: 1.6;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="LEON-black.png" alt="LEON logo">
-    <nav>
-      <a href="#bonus">Бонусы</a>
-      <a href="#bets">Ставки</a>
-      <a href="#app">Приложение</a>
-    </nav>
+    <img src="LEON-black.png" alt="LEON Logo">
+    <a href="#" class="cta-btn">Перейти в LEON</a>
   </header>
 
-  <section class="hero">
+  <main>
     <h1>Добро пожаловать в LEON</h1>
-    <p>Ставки на спорт, киберспорт и казино в стильном формате</p>
-    <a href="#bonus" class="btn">Получить бонус</a>
-    <a href="#bets" class="btn">Сделать ставку</a>
-  </section>
-
-  <footer>
-    © 2025 LEON. Все права защищены.
-  </footer>
+    <p>Здесь может быть короткий слоган, описание или промо-текст. 
+       Сделай ставку, ощути азарт и получи максимум эмоций!</p>
+    <a href="#" class="cta-btn">Играть сейчас</a>
+  </main>
 
 </body>
 </html>
